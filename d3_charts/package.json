@@ -1,0 +1,16 @@
+{
+  "name": "d3_charts",
+  "version": "1.0.0",
+  "description": "App for creating D3 dashboards",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Miguel Orbañanos",
+  "dependencies": {
+    "@google-cloud/storage": "^2.4.2",
+    "chart.js": "^2.7.3",
+    "dom-to-image": "^2.6.0",
+    "path": "^0.12.7"
+  }
+}

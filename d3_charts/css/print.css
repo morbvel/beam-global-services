@@ -1,0 +1,9 @@
+@media print{
+  .kpiDashboard{
+    width: 50%;
+  }
+  .kpiDashboard:nth-child(odd){
+    border-right: 0px solid transparent;
+  }
+
+}

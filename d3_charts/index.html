@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- BOOTSTRAP INTEGRATION -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- CUSTOM STYLES -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:100|ZCOOL+QingKe+HuangYou" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+  </head>
+
+  <body class="container-fluid" >
+    <button type="button" class="btn btn-secondary d-print-none" id="printDashboard">Print view</button>
+    <div id="body">
+      <!-- Main Title -->
+      <div class="row justify-content-center headerContainer">
+        <h2 class="title maintitle">Main Title</h2>
+      </div>
+
+      <!-- KPIs Block -->
+      <!--
+      <div class="row dashboardContainer justify-content-center">
+        <h2 class="title blockTitle">KPIs results</h2>
+        <div class="col-xs-6 col-lg-3 kpiDashboard dashboard">
+          <h3 class="title">Last year sales</h3>
+          <span class="kpiResult">146.325.3$</span>
+          <canvas id="pie-chart" class="pie-chart" data-title="Grafico de tarta" data-titleshow="false" data-legendshow="false" data-xaxisshow="false" data-yaxisshow="false" data-gridshow="false"></canvas>
+        </div>
+        <div class="col-xs-6 col-lg-3 kpiDashboard dashboard">
+          <h3 class="title">Last year sales</h3>
+          <span class="kpiResult">146.325.3$</span>
+          <canvas id="pie-chart2" class="pie-chart" data-title="Grafico polar" data-titleshow="false" data-legendshow="false" data-xaxisshow="false" data-yaxisshow="false" data-gridshow="false"></canvas>
+        </div>
+        <div class="col-xs-6 col-lg-3 kpiDashboard dashboard">
+          <h3 class="title">Last year sales</h3>
+          <span class="kpiResult">146.325.3$</span>
+          <canvas id="pie-chart3" class="pie-chart" data-title="Grafico de tarta" data-titleshow="false" data-legendshow="false" data-xaxisshow="false" data-yaxisshow="false" data-gridshow="false"></canvas>
+        </div>
+        <div class="col-xs-6 col-lg-3 kpiDashboard dashboard">
+          <h3 class="title">Last year sales</h3>
+          <span class="kpiResult">146.325.3$</span>
+          <canvas id="pie-chart4" class="pie-chart" data-title="Grafico de tarta" data-titleshow="false" data-legendshow="false" data-xaxisshow="false" data-yaxisshow="false" data-gridshow="false"></canvas>
+        </div>
+
+      </div>
+      -->
+
+      <!-- Metrics Dashboards -->
+      <div class="row dashboardContainer">
+
+        <h2 class="title blockTitle">Metrics dashboards</h2>
+        <div class="col col-xs-12 col-lg-6 standartDashboard dashboard">
+          <canvas id="new-bar-chart" class="board" data-file="test.json" data-type="bar" data-title="Grafico de radar" data-titleshow="true" data-legendshow="true" data-xaxisshow="false" data-yaxisshow="false" data-gridshow="false"></canvas>
+        </div>
+        <div class="col col-xs-12 col-lg-6 standartDashboard dashboard">
+          <canvas id="new-line-chart" class="board" data-file="test.json" data-type="line" data-title="Grafico de radar" data-titleshow="true" data-legendshow="true" data-xaxisshow="false" data-yaxisshow="false" data-gridshow="false"></canvas>
+        </div>
+        <!--
+        <h2 class="title blockTitle">Metrics dashboards</h2>
+        <div class="col col-xs-12 col-lg-6 standartDashboard dashboard">
+          <canvas id="radar-chart" data-title="Grafico de radar" data-titleshow="true" data-legendshow="true" data-xaxisshow="false" data-yaxisshow="false" data-gridshow="false"></canvas>
+        </div>
+
+        <div class="col col-xs-12 col-lg-6 smallContainer">
+          <div class="col col-xs-12 smallDashboard dashboard">
+            <canvas id="bar-chart" data-title="Grafico de barras" data-titleshow="true" data-legendshow="false" data-xaxisshow="true" data-yaxisshow="true" data-gridshow="true"></canvas>
+          </div>
+          <div class="col col-xs-12 smallDashboard dashboard">
+            <canvas id="lineal-chart" data-title="Grafico lineal" data-titleshow="true" data-legendshow="false" data-xaxisshow="true" data-yaxisshow="true" data-gridshow="true"></canvas>
+          </div>
+        </div>
+
+        -->
+
+      </div>
+    </div>
+
+    <script src="./js/bundle.js"></script>
+  </body>
+</html>
